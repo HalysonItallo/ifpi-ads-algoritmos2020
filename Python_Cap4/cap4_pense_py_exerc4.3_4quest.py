@@ -4,10 +4,10 @@ import math
 bob = turtle.Turtle()
 
 
-def circle(t,r):
+def circle(t,r,ang):
     circumference = 2*math.pi*r
     n = circumference / 2*r
-    polygon(t,2*r,n,180)
+    polygon(t,2*r,n,ang)
     
 
 def polygon(t,length,n,ang=360):
@@ -18,7 +18,7 @@ def polygon(t,length,n,ang=360):
 
 
 def main():
-    circle(bob,2)
+    circle(bob,2,180)
     turtle.mainloop()
 
 main()
