@@ -6,18 +6,16 @@ def main():
   
 def calc_fraction(number):
   result = 0
-  count1 = 1
-  count2 = number
-  while count1 <= number:
+  count = number
+  for i in range(1, number+1):
     if number < 1:
       print('Digite um valor válido.')
     else:
-      if count1 % 2 == 0:
-        result -= (count1 / count2)
+      if i % 2 == 0:
+        result -= (i / count)
       else:
-        result += (count2 / count1)
-      count1 += 1
-      count2 -= 1
+        result += (count / i)
+      count -= 1
   print(result)
      
 
