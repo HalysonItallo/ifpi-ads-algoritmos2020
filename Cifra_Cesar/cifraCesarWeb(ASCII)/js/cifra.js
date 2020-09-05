@@ -34,7 +34,6 @@ function buildText(text, indice, displacementNumber) {
 
 function rotateWord(e) {
   e.preventDefault();
-  
   const displacementNumber = Number(number.value);
   content.innerHTML = '';
   
