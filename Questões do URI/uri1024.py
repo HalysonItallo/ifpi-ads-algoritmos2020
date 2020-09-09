@@ -1,3 +1,5 @@
+from auxString import *
+
 def main():
   N = int(input())
   
@@ -6,12 +8,12 @@ def main():
     result_text = ''
     for j in M:
       posLetterDisplace = ord(j) + 3
-      if j.isalpha(): 
+      if is_aphabet(j): 
         result_text += chr(posLetterDisplace)
       else: 
         result_text += j    
     
-    result_text = result_text[::-1]
+    result_text = reverse_text(result_text)
     
     final_text = ''
     
